@@ -12,30 +12,49 @@ function NavMenu() {
                 >
                     <Tabs.List aria-label="tabs example" className='Tabs'>
                         <Tabs.Trigger value="Scanner" className='infoTabs'>
-                            One
+                            Scanner
                         </Tabs.Trigger>
 
                         <Tabs.Trigger value="Vpn" className='infoTabs'>
-                            Two
+                            Vpn
                         </Tabs.Trigger>
 
                         <Tabs.Trigger value="Refrigerar" className='infoTabs'>
-                            Three
+                            Privacidade
                         </Tabs.Trigger>
                     </Tabs.List>
                     <article className='ContentTabs'>
                         
                         <Tabs.Content value="Scanner" className='ContentTabsInfo'>
-                            Tab one content
+
+                            <article>
+                                <div>
+                                    <h2>Scanear</h2>
+                                    <span> Verifique residuos inuteis </span>
+                                </div>
+            
+                            </article> 
+
                         </Tabs.Content>
                         <Tabs.Content value="Vpn" className='ContentTabsInfo'>
-                            Tab two content
+
+                            <aside> 
+
+                                <h2>Ativar Vpn!</h2>
+                               
+                            </aside>
+                            
                         </Tabs.Content>
                         <Tabs.Content value="Refrigerar" className='ContentTabsInfo'>
-                            Tab three content
+                            
+                            <section>
+
+                            </section>
+
                         </Tabs.Content>
                     </article>
                 </Tabs.Root>
+                <input type="hidden" name="" />
             </NavsBar>
         </>
     )
