@@ -25,6 +25,7 @@ const NavsBar = styled.div`
                 border-right: 3px solid;
                 width: 10rem;
                 height: 5rem;
+                cursor: pointer;
             }
         }
 
@@ -36,40 +37,16 @@ const NavsBar = styled.div`
                 display: flex;
                 color: #000;
                 background-color: #fff;
+                margin: 0 auto;
+                
+                
+                article h1,section h1, aside h1{
+                    background-color: #fff;
+                    color: #000;
+                    font-weight: 600;
 
-
-
-                article{
-                    display: flex;
-                    flex-direction: column;
-                    margin: 0 auto;
-
-                    justify-content: center;
-                    margin-left: 2.5rem;
-                    margin-top: 2rem;
-                    cursor: pointer;
-
-                    div{
-                        background-color: #05f140ff; 
-                        text-align: center;
-                        align-items: center;
-                        height: 10rem;
-                        padding-top: 3.5rem;
-                        padding-left:1rem ;
-                        padding-right:1rem ;
-                        border-radius: 100%;
-
-                        h2, span{
-                            background-color: #05f140ff
-
-                        }
-                    }
-
-                    h2, span{
-                        color: #000;
-                    }
-            
                 }
+                
             }
         }
 

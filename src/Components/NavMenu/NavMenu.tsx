@@ -24,30 +24,29 @@ function NavMenu() {
                         </Tabs.Trigger>
                     </Tabs.List>
                     <article className='ContentTabs'>
-                        
+
                         <Tabs.Content value="Scanner" className='ContentTabsInfo'>
 
                             <article>
-                                <div>
-                                    <h2>Scanear</h2>
-                                    <span> Verifique residuos inuteis </span>
-                                </div>
-            
-                            </article> 
+                                <h1>
+                                    funções de limpar arquivos inuteis
+                                </h1>
+                            </article>
 
                         </Tabs.Content>
                         <Tabs.Content value="Vpn" className='ContentTabsInfo'>
 
-                            <aside> 
+                            <aside>
 
-                                <h2>Ativar Vpn!</h2>
-                               
+                                <h1>Funcionalidades de vpn</h1>
+
                             </aside>
-                            
+
                         </Tabs.Content>
                         <Tabs.Content value="Refrigerar" className='ContentTabsInfo'>
-                            
+
                             <section>
+                                <h1> funçoes que limita ações em segundo plano</h1>
 
                             </section>
 
