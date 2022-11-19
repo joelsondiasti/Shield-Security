@@ -1,65 +1,93 @@
 import styled from "styled-components";
 
 const NavsBar = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+   width: 100%;
     
-
-   .Content{
+   
+   .container{
         display: flex;
-        gap: 2rem;
-        width: 100%;
+        flex-direction: column;
+        background-color: #d9d9d9;
+        border-radius: 1rem 1rem 1rem 1rem;
+        align-items: center;
+        padding-bottom: 1rem;
         
-        background-color: #fff;
-        
-        border-radius: 0rem 1rem 1rem 0rem;
+        .tabs{
+            display: flex;
+            justify-content: space-evenly;
+            align-self: center;
+            width: 90%;
+            background-color: #f9f9f9;
+            border-radius: 1rem 1rem 1rem 1rem;
+            margin-bottom: 1rem;
+            
+            
+            .nameTabs{
+                color: #000;
+                background-color: #f9f9f9;
+                border-radius: 1rem 1rem 1rem 1rem;
+                padding: 1rem;
+                font-weight: 900;
+                transition: 0.4s;
 
-        .Tabs{
+                :focus{
+                    color: #339989;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .ContentTabs{
+            background-color: #d9d9d9;
+
             display: flex;
             flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            align-self: center;
             
-            .infoTabs{
-                background-color:  #141419;
-                padding: 1rem;
-                border-right: 3px solid;
-                width: 10rem;
-                height: 5rem;
-                cursor: pointer;
-            }
-        }
 
-        article{
-            background-color: #fff;
-            color: #000;
-
-            .ContentTabsInfo{
+            section{
                 display: flex;
-                color: #000;
-                background-color: #fff;
-                margin: 0 auto;
-                
-                
-                article h1,section h1, aside h1{
-                    background-color: #fff;
-                    color: #000;
-                    font-weight: 600;
+                flex-direction: column;
+                gap: 1rem;
+                text-align: justify;
+                width: 70%;
 
+                margin-left: 1rem;
+                margin-right: 1rem;
+
+                h1{
+                    align-self: center;
                 }
-                
+
+                button{
+                    background-color: #05f140ff;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    transition: 1s;
+
+                    :hover{
+                        background-color: #03dd3a;
+                        border-radius: 1.2rem;
+                    }
+                }
+            }
+
+
+            section, h1, p, button{
+                background-color: #d9d9d9;
+                color: #010101;
+                font-weight: 400;
             }
         }
+    }
 
-        .Tabs, .infoTabs, .ContentTabs,
-         .ContentTabsInfo {
-            
-            color: #fff;
-            font-size: 1.5rem;
-            font-weight: 400;
-
-        }
-
-   }
+    img{
+        height: 10rem;
+        width: 10rem;
+        background-color: #d9d9d9;
+    }
 `
 
 export default NavsBar

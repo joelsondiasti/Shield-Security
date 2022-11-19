@@ -7,53 +7,72 @@ function NavMenu() {
     return (
         <>
             <NavsBar>
-                <Tabs.Root
-                    defaultValue="tab1" orientation="vertical" className='Content'
-                >
-                    <Tabs.List aria-label="tabs example" className='Tabs'>
-                        <Tabs.Trigger value="Scanner" className='infoTabs'>
+                <Tabs.Root defaultValue="tab1" className='container'>
+                    <Tabs.List aria-label="tabs example" className='tabs' >
+                        <Tabs.Trigger value="Scanner" className='nameTabs' >
                             Scanner
                         </Tabs.Trigger>
 
-                        <Tabs.Trigger value="Vpn" className='infoTabs'>
+                        <Tabs.Trigger value="Vpn" className='nameTabs'>
                             Vpn
                         </Tabs.Trigger>
-
-                        <Tabs.Trigger value="Refrigerar" className='infoTabs'>
-                            Privacidade
+                        
+                        <Tabs.Trigger value="GerenciadorDeSenhas" className='nameTabs'>
+                            Senhas
                         </Tabs.Trigger>
+
                     </Tabs.List>
-                    <article className='ContentTabs'>
 
-                        <Tabs.Content value="Scanner" className='ContentTabsInfo'>
 
-                            <article>
-                                <h1>
-                                    funções de limpar arquivos inuteis
-                                </h1>
-                            </article>
+                    <Tabs.Content value="Scanner" className='ContentTabs'>
 
-                        </Tabs.Content>
-                        <Tabs.Content value="Vpn" className='ContentTabsInfo'>
+                        <h1>Scanner</h1>
+                        <img src="/scan.png" alt="" />
+                        <section>
 
-                            <aside>
+                            <p>
+                                Scanner e uma ferramente que vasculha por todo seu dispositivo a procura de programas maliciosos e residuos de arquivos inuteis.
+                            </p>
 
-                                <h1>Funcionalidades de vpn</h1>
+                            <button>
+                                Scannear agora
+                            </button>
+                        </section>
+                    </Tabs.Content>
 
-                            </aside>
+                    <Tabs.Content value="GerenciadorDeSenhas" className='ContentTabs'>
 
-                        </Tabs.Content>
-                        <Tabs.Content value="Refrigerar" className='ContentTabsInfo'>
+                        <h1>Gerenciar Senhas</h1>
+                        <img src="/privacidade.png" alt="" />
+                        <section>
 
-                            <section>
-                                <h1> funçoes que limita ações em segundo plano</h1>
+                            <p>
+                                O gerenciador de senhas lhe ajuda a criar e manter suas senhas protegidas contra ataques externos
+                            </p>
+                            <button>
+                                Inciar gerenciador
+                            </button>
 
-                            </section>
+                        </section>
+                    </Tabs.Content>
 
-                        </Tabs.Content>
-                    </article>
+                    <Tabs.Content value="Vpn" className='ContentTabs'>
+
+                        <h1>Vpn</h1>
+                        <img src="/vpn.png" alt="" />
+                        <section>
+
+                            <p>
+                                O vpn e uma ferramenta que oculta e criptografia o seu endereço de ip, afim de manter a sua segurança ao acessar sites duvidosos.
+                            </p>
+                            <button>
+                                Ativar vpn agora
+                            </button>
+                        </section>
+                    </Tabs.Content>
+
                 </Tabs.Root>
-                <input type="hidden" name="" />
+
             </NavsBar>
         </>
     )

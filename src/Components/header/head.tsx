@@ -18,6 +18,9 @@ export default function TopWeb() {
                             <a href="/Antivirus">
                                 <li>Antivirus </li>
                             </a>
+                            <a href="/About">
+                                <li>Sobre </li>
+                            </a>
                         </ul>
                     </nav>
                 </header>

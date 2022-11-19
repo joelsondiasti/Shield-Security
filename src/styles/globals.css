@@ -6,11 +6,11 @@
   --bg-color: #303030ff;
   --font-primiry-color: #e6e8e6ff;
   --persian-g: #339989;
-  --secundary-color-bg: #05f140ff;
+  --secundary-color-bg: #03dd3a;
   --extra: #39579c;
 }
 
-*{
+* {
 
   padding: 0;
   margin: 0;
