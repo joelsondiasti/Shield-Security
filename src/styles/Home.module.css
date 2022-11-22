@@ -1,0 +1,170 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #339989;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 3rem;
+  background-color: #339989;
+}
+
+.header div img,
+.header div h1 {
+  background-color: #339989;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.header nav {
+  margin-right: 3rem;
+}
+
+.trigger,
+.menuTab,
+.menuTab a,
+.contentTab {
+  background-color: #339989;
+  font-weight: 400;
+}
+
+.separador {
+  height: 1px !important;
+  background-color: #bbb !important;
+}
+
+.contentTab {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+}
+
+.menuTab {
+  cursor: pointer;
+  align-self: center;
+  transition: 1s;
+}
+
+.menuTab:hover {
+  text-decoration: underline;
+}
+
+.trigger {
+  margin-right: 3rem;
+  pointer-events: visible;
+}
+
+/* Main */
+
+.main {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 20rem;
+  gap: 5rem;
+  align-items: center;
+}
+
+
+.section div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: justify;
+}
+
+.section div h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+
+  color: #05f140ff;
+}
+
+.section div a {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  text-align: center;
+  background-color: #05f140ff;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.5rem;
+  transition: 1s;
+
+
+}
+
+.section div a:hover {
+  border-radius: 1.5rem;
+  background-color: #44ff73;
+}
+
+
+@media (max-width: 600px) {
+
+  /* header */
+  .header div {
+    margin-left: 0rem;
+  }
+  .trigger {
+    margin-right: 0rem;
+  }
+  .separador {
+    height: 1px !important;
+    background-color: #bbb !important;
+  }
+  
+  .contentTab {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  
+    padding: 0.5rem;
+    border: 1px solid #bbb;
+  
+  }
+  
+  .menuTab {
+    cursor: pointer;
+    align-self: center;
+    transition: 1s;
+  }
+  
+  /* Main */
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+  }
+
+  .section img{
+    width: 15rem;
+  }
+}
