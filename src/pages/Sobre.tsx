@@ -22,7 +22,7 @@ export default function Sobre() {
         <main className={styles.main}>
           <section>
             <article>
-              <Image src="/logo.ico" alt="" width={30} height={30} className={styles.img} />
+              <Image src="/favicon.ico" alt="" width={30} height={30} className={styles.img} />
               <h1>
                 Quem somos?
               </h1>
