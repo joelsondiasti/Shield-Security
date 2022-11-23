@@ -74,7 +74,7 @@
   align-self: center;
 }
 
-.ContentTabs section button {
+.ContentTabs section Button {
   background-color: #05f140ff;
   padding: 1rem;
   border-radius: 1rem;
@@ -82,7 +82,7 @@
 
 }
 
-.ContentTabs section button:hover {
+.ContentTabs section Button:hover {
   background-color: #03dd3a;
   border-radius: 1.2rem;
 }
@@ -92,7 +92,7 @@
   align-self: center;
 }
 
-.ContentTabs section button {
+.ContentTabs section Button {
   font-weight: 600;
   color: #339989;
 }

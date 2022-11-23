@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title> Shield Security</title>
 
-        <link rel="icon" href="/logo.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       
       <div className={styles.app}>

@@ -8,7 +8,7 @@ function Header() {
      
       <header className={styles.header}>
         <div>
-          <img src="/logo.ico" alt="" />
+          <img src="/favicon.ico" alt="" />
           <h1>Shield Security</h1>
         </div>
 
@@ -31,7 +31,7 @@ function Header() {
               </DropdownMenu.Item>
               <DropdownMenu.Separator className={styles.separador} />
               <DropdownMenu.Item className={styles.menuTab}>
-                <a href="/About">
+                <a href="/Sobre">
                   Sobre
                 </a>
               </DropdownMenu.Item>
