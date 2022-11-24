@@ -45,6 +45,11 @@
   transition: 0.2s;
 }
 
+.Trigger:hover{
+  color:#fff;
+  background-color: #339989 
+}
+
 .Trigger:focus {
   color: #339989;
   text-decoration: underline;
